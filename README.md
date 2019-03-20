@@ -32,7 +32,7 @@ CYK parameters :
 * `--written_sentence`: Parse a sentence provided through the argument `--sent_to_parse`. If not, parse a file of sentences provided through the argument `--file_to_parse`
 * By default : False
 * `--sent_to_parse`: Written sentence to parse
-* By default : "Je suis un élève du master MVA ."
+* By default : "Le maire de Paris ."
 * `--file_to_parse`: Path to the file containing sentences to parse (one sentence per line, exactly one whitespace between each token)
 * By default : "test_sentences.txt" (Last 10% of the SEQUOIA treebank)
 * `--output_path`: Output path for the sentences parses outputs.
@@ -65,5 +65,5 @@ bash run.sh --train_size 1 --test_size 0 --file_to_parse "sentences_to_parse.txt
 
 4. To train the parser on all the SEQUOIA treebank and parse a written sentence "Le maire de Paris .":
 ```bash
-bash run.sh --train_size 1 --test_size 0 --written_sentence --sent_to_parse "Je suis un élève du master MVA ."
+bash run.sh --train_size 1 --test_size 0 --written_sentence --sent_to_parse "Le maire de Paris ."
 ```
