@@ -39,7 +39,7 @@ def parse_arguments():
     argparser.add_argument("--written_sentence", action="store_true",
                            help="Parse a sentence provided through the argument `--sent_to_parse`. \
                            If not, parse a file of sentences provided through the argument `--file_to_parse`")
-    argparser.add_argument("--sent_to_parse", type=str, default="Je suis un élève du master MVA .", help="Written sentence to parse")
+    argparser.add_argument("--sent_to_parse", type=str, default="Le maire de Paris .", help="Written sentence to parse")
     argparser.add_argument("--file_to_parse", type=str, default="test_sentences.txt", 
                            help="Path to the file containing sentences to parse (one sentence per line, exactly one whitespace between each token)")
     argparser.add_argument("--output_path", type=str, default="parse_results.txt", 
